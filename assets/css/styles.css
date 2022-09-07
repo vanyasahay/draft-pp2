@@ -137,9 +137,9 @@ button {
 
 /* Extra small devices (Portrait mode, phones, 600px and down) */
 
-@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
@@ -149,7 +149,7 @@ button {
 
 @media only screen and (max-width: 600px) and (orientation: landscape) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
@@ -159,7 +159,7 @@ button {
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
@@ -169,7 +169,7 @@ button {
 
 @media only screen and (max-width: 600px) and (orientation: landscape) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
@@ -179,7 +179,7 @@ button {
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
@@ -189,7 +189,7 @@ button {
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
@@ -199,7 +199,7 @@ button {
 
 @media only screen and (max-width: 992px) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
@@ -209,7 +209,7 @@ button {
 
 @media only screen and (max-width: 1200px) {
     * {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
