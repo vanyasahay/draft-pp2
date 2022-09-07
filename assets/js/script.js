@@ -50,16 +50,16 @@ const generateGame = () => {
             throw new Error("The dimension of the board must be an even number.")
         }
 
-        const emojis = ['https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566863/memoryGameImages/4_v6le2t.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566424/memoryGameImages/2_ndedhs.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566423/memoryGameImages/10_nn5fup.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566424/memoryGameImages/9_rqg02j.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566424/memoryGameImages/3_s8zjtn.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566423/memoryGameImages/8_o2qelx.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566423/memoryGameImages/7_se7nza.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566423/memoryGameImages/1_u3kmmy.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566423/memoryGameImages/5_nutqdt.png',
-            'https://res.cloudinary.com/dk2fqntmr/image/upload/v1662566423/memoryGameImages/6_u6ureo.png'
+        const emojis = ['/assets/images/10.png',
+            '/assets/images/1.png',
+            '/assets/images/2.png',
+            '/assets/images/3.png',
+            '/assets/images/4.png',
+            '/assets/images/5.png',
+            '/assets/images/6.png',
+            '/assets/images/7.png',
+            '/assets/images/8.png',
+            '/assets/images/9.png'
         ]
         const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
         const items = shuffle([...picks, ...picks])
