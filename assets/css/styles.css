@@ -48,8 +48,6 @@ button {
 }
 
 .stats {
-    display: flex;
-    justify-content: flex-end;
     color: #FFF;
     font-size: 14pt;
 }
