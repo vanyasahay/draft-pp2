@@ -75,7 +75,8 @@ const startGame = () => {
     selectors.start.classList.add('disabled')
 
     state.loop = setInterval(() => {
-        state.totalTime++
+        state.totalTime=0
+        state.totalFlips=0
 
         selectors.moves.innerText = `${state.totalFlips} moves`
         selectors.timer.innerText = `time: ${state.totalTime} sec`
