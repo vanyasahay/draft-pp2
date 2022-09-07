@@ -149,7 +149,7 @@ h1 {
 
 /* Extra small devices (Portrait mode, phones, 600px and down) */
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 600px) and (orientation: portrait) {
     html {
         width: 100%;
         height: auto;
@@ -169,7 +169,7 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
     html {
         width: 100%;
         height: auto;
