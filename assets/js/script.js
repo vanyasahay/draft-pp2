@@ -72,18 +72,6 @@ const generateGame = () => {
 
 const startGame = () => {
     state.gameStarted = true
-
-    state.loop = setInterval(() => {
-        state.totalTime=0
-        state.totalFlips=0
-
-        selectors.moves.innerText = `${state.totalFlips} moves`
-        selectors.timer.innerText = `time: ${state.totalTime} sec`
-    }, 1000)
-}
-
-const resetGame = () => {
-    state.gameStarted = true
     selectors.start.classList.add('disabled')
 
     state.loop = setInterval(() => {
@@ -92,7 +80,19 @@ const resetGame = () => {
         selectors.moves.innerText = `${state.totalFlips} moves`
         selectors.timer.innerText = `time: ${state.totalTime} sec`
     }, 1000)
+}
+
+const resetGame = () => {
+    state.gameStarted = true
     
+
+    state.loop = setInterval(() => {
+        state.totalTime=0
+        state.totalFlips=0
+
+        selectors.moves.innerText = `${state.totalFlips} moves`
+        selectors.timer.innerText = `time: ${state.totalTime} sec`
+    }, 1000)
 
 }
 
