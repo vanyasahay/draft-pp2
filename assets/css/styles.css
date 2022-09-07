@@ -156,6 +156,7 @@ h1 {
     }
     #start {
         width: auto;
+        padding-left: 2cm;
     }
     #reset {
         width: auto;
@@ -166,16 +167,18 @@ h1 {
     .board {
         display: grid;
         grid-template-columns: repeat(4, auto);
+        padding-left: 2cm;
     }
 }
 
-@media only screen and (min-width: 768px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
     html {
         width: 100%;
         height: auto;
     }
     #start {
         width: auto;
+        padding-left: 2cm;
     }
     #reset {
         width: auto;
@@ -186,5 +189,6 @@ h1 {
     .board {
         display: grid;
         grid-template-columns: repeat(4, auto);
+        padding-left: 2cm;
     }
 }
