@@ -147,7 +147,7 @@ button {
 
 /* Extra small devices (Landscape mode, phones, 600px and down) */
 
-@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-width: 600px) and (orientation: landscape) {
     * {
         max-width: 100%;
         height: auto;
@@ -157,7 +157,7 @@ button {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     * {
         max-width: 100%;
         height: auto;
@@ -167,7 +167,7 @@ button {
 
 /* Small devices (landscape tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-width: 600px) and (orientation: landscape) {
     * {
         max-width: 100%;
         height: auto;
@@ -177,7 +177,7 @@ button {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
     * {
         max-width: 100%;
         height: auto;
@@ -187,7 +187,7 @@ button {
 
 /* Medium devices (portrait tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
     * {
         max-width: 100%;
         height: auto;
