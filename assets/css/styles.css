@@ -52,7 +52,7 @@ button {
     font-size: 14pt;
 }
 
-.board-container {
+.game-container {
     position: relative;
 }
 
@@ -72,11 +72,11 @@ button {
     grid-gap: 20px;
 }
 
-.board-container.flipped .board {
+.game-container.flipped .board {
     transform: rotateY(180deg) rotateZ(50deg);
 }
 
-.board-container.flipped .win {
+.game-container.flipped .win {
     transform: rotateY(0) rotateZ(0);
 }
 

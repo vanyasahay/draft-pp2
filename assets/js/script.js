@@ -1,5 +1,5 @@
 const selectors = {
-    boardContainer: document.querySelector('.board-container'),
+    boardContainer: document.querySelector('.game-container'),
     board: document.querySelector('.board'),
     moves: document.querySelector('.moves'),
     timer: document.querySelector('.timer'),
