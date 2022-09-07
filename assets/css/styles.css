@@ -137,79 +137,39 @@ button {
 
 /* Extra small devices (Portrait mode, phones, 600px and down) */
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 600px) and (orientation: portrait) {}
 
 
 /* Extra small devices (Landscape mode, phones, 600px and down) */
 
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 600px) and (orientation: landscape) {}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 600px) and (orientation: portrait) {}
 
 
 /* Small devices (landscape tablets and large phones, 600px and up) */
 
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 600px) and (orientation: landscape) {}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 768px) and (orientation: landscape) {}
 
 
 /* Medium devices (portrait tablets, 768px and up) */
 
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 768px) and (orientation: portrait) {}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (max-width: 992px) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 992px) {}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (max-width: 1200px) {
-    * {
-        max-width: auto;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 1200px) {}
