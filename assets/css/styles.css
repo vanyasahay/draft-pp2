@@ -28,8 +28,8 @@ h1 {
 }
 
 #start {
-    background: #d1c47d;
-    color: #FFF;
+    background: #ffffff;
+    color: rgb(53, 133, 6);
     border-radius: 5px;
     padding: 10px 20px;
     border: 0;
@@ -39,9 +39,9 @@ h1 {
 }
 
 #reset {
-    background: #d1c47d;
+    background: #ffffff;
     justify-content: flex-end;
-    color: #FFF;
+    color: rgb(253, 2, 2);
     border-radius: 5px;
     padding: 10px 20px;
     border: 0;
@@ -51,7 +51,7 @@ h1 {
 }
 
 .disabled {
-    color: #757575;
+    color: #8d7d7d;
 }
 
 .stats {
@@ -67,7 +67,7 @@ h1 {
 .win {
     border-radius: 5px;
     box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
-    background: #6f00fc;
+    background: linear-gradient(45deg, #6f00fc 0%, #fc7900 50%, #fcc700 100%);
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
