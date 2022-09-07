@@ -89,7 +89,7 @@ const resetGame = () => {
 
         selectors.moves.innerText = `${state.totalFlips} moves`
         selectors.timer.innerText = `time: ${state.totalTime} sec`
-    }, 1000)
+    }, 0)
 
 }
 
