@@ -10,6 +10,15 @@ html {
     font-family: Ubuntu-Bold;
 }
 
+h1 {
+    position: absolute;
+    text-align: center;
+    font-family: Ubuntu-Bold;
+    text-decoration: underline;
+    padding: 1rem;
+    color: #2c0ac5b7;
+}
+
 .game {
     position: absolute;
     top: 50%;
