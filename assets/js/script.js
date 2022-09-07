@@ -84,6 +84,7 @@ const startGame = () => {
 
 const resetGame = () => {
     state.gameStarted = true
+    selectors.reset.classList.add('disabled')
     state.loop = setInterval(() => {
 
         selectors.moves.innerText = `${state.totalFlips} moves`
