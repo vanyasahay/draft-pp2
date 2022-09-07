@@ -84,15 +84,12 @@ const startGame = () => {
 
 const resetGame = () => {
     state.gameStarted = true
-    
-
-    state.loop = setInterval(() => {
-        state.totalTime=0
-        state.totalFlips=0
+    state.totalTime=0
+    state.totalFlips=0
 
         selectors.moves.innerText = `${state.totalFlips} moves`
         selectors.timer.innerText = `time: ${state.totalTime} sec`
-    }, 1000)
+    
 
 }
 
