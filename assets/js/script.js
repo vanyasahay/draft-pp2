@@ -75,8 +75,7 @@ const startGame = () => {
     selectors.start.classList.add('disabled')
 
     state.loop = setInterval(() => {
-        state.totalTime=0
-        state.totalFlips=0
+        state.totalTime++
 
         selectors.moves.innerText = `${state.totalFlips} moves`
         selectors.timer.innerText = `time: ${state.totalTime} sec`
@@ -86,13 +85,12 @@ const startGame = () => {
 const resetGame = () => {
     state.gameStarted = true
     selectors.reset.classList.add('disabled')
-    state.loop = setInterval(() => {
-
+        state.totalTime=0
+        state.totalFlips=0
         selectors.moves.innerText = `${state.totalFlips} moves`
         selectors.timer.innerText = `time: ${state.totalTime} sec`
-    }, 1000)
+    }
 
-}
 
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
