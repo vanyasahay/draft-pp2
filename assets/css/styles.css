@@ -145,3 +145,19 @@ h1 {
 .highlight {
     color: #6f00fc;
 }
+
+
+/* Extra small devices (Portrait mode, phones, 600px and down) */
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    html {
+        width: 100%;
+        height: auto;
+    }
+    #start {
+        width: auto;
+    }
+    #reset {
+        width: auto;
+    }
+}
