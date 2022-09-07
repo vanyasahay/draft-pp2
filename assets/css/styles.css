@@ -15,7 +15,7 @@ h1 {
     justify-content: center;
     font-family: Ubuntu-Bold;
     text-decoration: underline;
-    padding: 2rem;
+    padding-bottom: 2rem;
     color: #2c0ac5b7;
 }
 
@@ -48,6 +48,8 @@ button {
 }
 
 .stats {
+    display: flex;
+    justify-content: flex-end;
     color: #FFF;
     font-size: 14pt;
 }
