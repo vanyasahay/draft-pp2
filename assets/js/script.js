@@ -50,16 +50,22 @@ const generateGame = () => {
             throw new Error("The dimension of the board must be an even number.")
         }
 
-        const emojis = ['/assets/images/10.png',
-            '/assets/images/1.png',
-            '/assets/images/2.png',
-            '/assets/images/3.png',
-            '/assets/images/4.png',
-            '/assets/images/5.png',
-            '/assets/images/6.png',
-            '/assets/images/7.png',
-            '/assets/images/8.png',
-            '/assets/images/9.png'
+        function createImage(src) {
+            var img = document.createElement('img');
+            img.src = src;
+            return img;
+        }
+
+        const emojis = [createImage("/assets/images/10.png"),
+            createImage("/assets/images/1.png"),
+            createImage("/assets/images/2.png"),
+            createImage(" /assets/images/3.png"),
+            createImage("/assets/images/4.png"),
+            createImage("/assets/images/5.png"),
+            createImage("/assets/images/6.png"),
+            createImage("/assets/images/7.png"),
+            createImage("/assets/images/8.png"),
+            createImage("/assets/images/9.png")
         ]
         const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
         const items = shuffle([...picks, ...picks])
