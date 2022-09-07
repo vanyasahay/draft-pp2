@@ -149,10 +149,12 @@ const attachEventListeners = () => {
 
         if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
             flipCard(eventParent)
-        } else if (eventTarget.nodeName === 'BUTTON' && !eventTarget.className.includes('disabled')) {
+        } else if (eventTarget.nodeName === '#start' && !eventTarget.className.includes('disabled')) {
             startGame()
+        } else if (eventTarget.nodeName === '#reset' && !eventTarget.className.includes('disabled')) {
+            resetGame()
         }
-    })
+})
 }
 
 generateGame()
