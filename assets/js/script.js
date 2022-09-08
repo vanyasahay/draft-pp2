@@ -81,7 +81,7 @@ const startGame = () => {
     }, 1000)
 }
 
-const resetButton = document.querySelector(".reset");
+const resetButton = document.querySelector("#reset");
 
 resetButton.addEventListener("click", () => {
     moves.innerHTML = 0;
