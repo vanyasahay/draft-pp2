@@ -68,7 +68,7 @@ const prepareGame = () => {
     
     const parser = new DOMParser().parseFromString(cards, 'text/html')
 
-    selectors.board.replaceWith(parser.querySelector('.board'))
+    selectors.board.replaceWith(parser.querySelector('.deck'))
 }
 
 //Function to Start Game.
