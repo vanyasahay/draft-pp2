@@ -1,3 +1,4 @@
+//Selectors used in building this game
 const selectors = {
     boardContainer: document.querySelector('.board-container'),
     board: document.querySelector('.board'),
@@ -43,6 +44,7 @@ const pickRandom = (array, items) => {
     return randomPicks
 }
 
+//Function to generate game
 const generateGame = () => {
         const dimensions = selectors.board.getAttribute('data-dimension')
 
@@ -69,6 +71,7 @@ const generateGame = () => {
     selectors.board.replaceWith(parser.querySelector('.board'))
 }
 
+//Function to Start Game.
 const startGame = () => {
     state.gameStarted = true
     selectors.start.classList.add('disabled')
@@ -81,6 +84,7 @@ const startGame = () => {
     }, 1000)
 }
 
+//Function for back flip
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
         card.classList.remove('flipped')

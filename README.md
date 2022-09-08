@@ -53,9 +53,6 @@ To make this game existing two functions are added- Total number of flips and To
 - Firefox
 - Microsoft Edge
 
-### **Accessibility Testing**
-- Color Contrast: This website is used to verify color contrast analyzer ![Color Contrast](https://webaim.org/resources/contrastchecker/)
-
 
 ### Validator Testing 
 
