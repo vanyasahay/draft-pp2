@@ -38,18 +38,6 @@ h1 {
     font-size: 18pt;
 }
 
-#reset {
-    background: #ffffff;
-    justify-content: flex-end;
-    color: rgb(253, 2, 2);
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: 0;
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18pt;
-}
-
 .disabled {
     color: #8d7d7d;
 }

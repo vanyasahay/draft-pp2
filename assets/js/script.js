@@ -4,7 +4,6 @@ const selectors = {
     moves: document.querySelector('.moves'),
     timer: document.querySelector('.timer'),
     start: document.querySelector('#start'),
-    reset: document.querySelector('#reset'),
     win: document.querySelector('.win')
 }
 
@@ -51,13 +50,13 @@ const generateGame = () => {
             throw new Error("The dimension of the board must be an even number.")
         }
 
-        const emojis = ['🥔', '🍒', '🥑', '🌽', '🥕', '🍇', '🍉', '🍌', '🥭', '🍍']
+        const emojis = ['🍓', '🥭', '🍋', '🍍', '🍊', '🍑', '🍇', '🍉', '🍌', '🍐']
         const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
         const items = shuffle([...picks, ...picks])
         const cards = `
         <div class="board" style="grid-template-columns: repeat(${dimensions}, auto)">
             ${items.map(item => `
-                <div class="card">
+                <div class="card"
                     <div class="card-front"></div>
                     <div class="card-back">${item}</div>
                 </div>
@@ -81,15 +80,6 @@ const startGame = () => {
         selectors.timer.innerText = `time: ${state.totalTime} sec`
     }, 1000)
 }
-
-const resetGame = () => {
-    state.gameStarted = true
-    selectors.reset.classList.add('disabled')
-        state.totalTime=0
-        state.totalFlips=0
-        selectors.moves.innerText = `${state.totalFlips} moves`
-        selectors.timer.innerText = `time: ${state.totalTime} sec`
-    }
 
 
 const flipBackCards = () => {
@@ -151,8 +141,6 @@ const attachEventListeners = () => {
             flipCard(eventParent)
         } else if (eventTarget.nodeName === '#start' && !eventTarget.className.includes('disabled')) {
             startGame()
-        } else if (eventTarget.nodeName === '#reset' && !eventTarget.className.includes('disabled')) {
-            resetGame()
         }
 })
 }
