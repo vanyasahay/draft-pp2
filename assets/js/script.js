@@ -1,4 +1,3 @@
-//Selectors used in building this game
 const selectors = {
     boardContainer: document.querySelector('.game-container'),
     board: document.querySelector('.board'),
@@ -51,18 +50,10 @@ const generateGame = () => {
             throw new Error("The dimension of the board must be an even number.")
         }
 
-        //Function to generate game
-        const generateGame = () => {
-                const dimensions = selectors.board.getAttribute('data-dimension')
-
-                if (dimensions % 2 !== 0) {
-                    throw new Error("The dimension of the board must be an even number.")
-                }
-
-                const emojis = ['🍓', '🥭', '🍋', '🍍', '🍊', '🍑', '🍇', '🍉', '🍌', '🍐']
-                const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
-                const items = shuffle([...picks, ...picks])
-                const cards = `
+        const emojis = ['🍓', '🥭', '🍋', '🍍', '🍊', '🍑', '🍇', '🍉', '🍌', '🍐']
+        const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
+        const items = shuffle([...picks, ...picks])
+        const cards = `
         <div class="board" style="grid-template-columns: repeat(${dimensions}, auto)">
             ${items.map(item => `
                 <div class="card">
@@ -78,7 +69,6 @@ const generateGame = () => {
     selectors.board.replaceWith(parser.querySelector('.board'))
 }
 
-//Function to Start Game.
 const startGame = () => {
     state.gameStarted = true
     selectors.start.classList.add('disabled')
@@ -130,9 +120,9 @@ const flipCard = card => {
             selectors.boardContainer.classList.add('flipped')
             selectors.win.innerHTML = `
                 <span class="win-text">
-                    You are the CHAMPION where!<br />
-                    with <span class="highlight">${state.totalFlips}</span> moves<br />
-                    under <span class="highlight">${state.totalTime}</span> seconds
+                    You are the CHAMPION!<br />
+                    Total moves taken <span class="highlight">${state.totalFlips}</span> moves<br />
+                    Total Time Taken <span class="highlight">${state.totalTime}</span> seconds
                 </span>
             `
 
@@ -153,6 +143,6 @@ const attachEventListeners = () => {
         }
     })
 }
-}
+
 generateGame()
 attachEventListeners()
