@@ -100,14 +100,14 @@ Press Enter to create your local clone.
   - VS Code and GITPOD
   
   **Emojis
-  - https://emojipedia.org/brain/
-  - https://emojipedia.org/strawberry/
-  - https://emojipedia.org/mango/
-  - https://emojipedia.org/lemon/
-  - https://emojipedia.org/pineapple/
-  - https://emojipedia.org/tangerine/
-  - https://emojipedia.org/peach/
-  - https://emojipedia.org/grapes/
-  - https://emojipedia.org/watermelon/
-  - https://emojipedia.org/banana/
-  - https://emojipedia.org/pear/
+  - Brain(🧠)- https://emojipedia.org/brain/
+  - Strawberry(🍓)- https://emojipedia.org/strawberry/
+  - Mango(🥭)- https://emojipedia.org/mango/
+  - Lemon(🍋)- https://emojipedia.org/lemon/
+  - Pineapple(🍍)- https://emojipedia.org/pineapple/
+  - Tangerine(🍊)- https://emojipedia.org/tangerine/
+  - Peach(🍑)- https://emojipedia.org/peach/
+  - Grapes(🍇)- https://emojipedia.org/grapes/
+  - Watermelon(🍉)- https://emojipedia.org/watermelon/
+  - Banana(🍌)- https://emojipedia.org/banana/
+  - Pear(🍐)- https://emojipedia.org/pear/
