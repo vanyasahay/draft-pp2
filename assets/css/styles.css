@@ -28,7 +28,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-#start #reset {
+#start {
     background: #282A3A;
     color: #FFF;
     border-radius: 5px;
@@ -37,7 +37,17 @@ h1 {
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18pt;
-    justify-content: end;
+}
+
+#reset {
+    background: #282A3A;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
 }
 
 .disabled {

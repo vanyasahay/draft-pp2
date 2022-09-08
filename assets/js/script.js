@@ -83,9 +83,9 @@ const startGame = () => {
 
 const resetButton = document.querySelector("#reset");
 resetButton.addEventListener("click", () => {
-    moves.innerHTML = 0;
+    selectors.moves.innerHTML = 0;
     moves = 0;
-    board.innerHTML = '';
+    selectors.board.innerHTML = '';
     generateGame();
 });
 
