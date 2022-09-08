@@ -81,6 +81,17 @@ const startGame = () => {
     }, 1000)
 }
 
+const resetButton = document.querySelector(".reset");
+
+resetButton.addEventListener("click", () => {
+    moves.innerHTML = 0;
+    moves = 0;
+    board.innerHTML = '';
+    generateGame();
+});
+
+generateGame()
+
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
         card.classList.remove('flipped')

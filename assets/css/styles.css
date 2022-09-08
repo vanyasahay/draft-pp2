@@ -28,7 +28,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-#start {
+#start #reset {
     background: #282A3A;
     color: #FFF;
     border-radius: 5px;
