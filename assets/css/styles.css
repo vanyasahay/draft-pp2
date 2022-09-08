@@ -20,7 +20,7 @@ h1 {
 
 /**/
 
-.game {
+.memoryGame {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -180,13 +180,10 @@ h1 {
         width: auto;
         padding-left: 2cm;
     }
-    #reset {
-        width: auto;
-    }
     h1 {
         padding-bottom: 2rem;
     }
-    .board {
+    .deck {
         display: grid;
         grid-template-columns: repeat(4, auto);
         padding-left: 2cm;
@@ -202,13 +199,10 @@ h1 {
         width: auto;
         padding-left: 2cm;
     }
-    #reset {
-        width: auto;
-    }
     h1 {
         padding-bottom: 2rem;
     }
-    .board {
+    .deck {
         display: grid;
         grid-template-columns: repeat(4, auto);
         padding-left: 2cm;
