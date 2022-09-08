@@ -1,7 +1,7 @@
 html {
     width: 100%;
     height: 100%;
-    background: linear-gradient(120deg, #6f00fc 0%, #fc7900 50%, #fcc700 100%);
+    background: linear-gradient(120deg, #fc9300 0%, #00fcc5 50%, #fc00ce 100%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -40,6 +40,7 @@ h1 {
 /*Start Button*/
 
 #start {
+    justify-content: right;
     background: #ffffff;
     color: rgb(53, 133, 6);
     border-radius: 5px;
@@ -72,16 +73,16 @@ h1 {
 
 /*Emoji Tiles*/
 
-.board,
-.win {
+.deck,
+.winMessage {
     border-radius: 5px;
     box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
-    background: linear-gradient(45deg, #6f00fc 0%, #fc7900 50%, #fcc700 100%);
+    background: linear-gradient(45deg, #04fc00b1 0%, #fc0000 50%, #00e3fc 100%);
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
 
-.board {
+.deck {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -119,7 +120,7 @@ h1 {
     width: 100%;
     height: 100%;
     background: #282A3A;
-    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform .6s cubic-bezier(0.5, 0.0, 0.3, 1);
     backface-visibility: hidden;
 }
 
@@ -143,7 +144,7 @@ h1 {
 
 /*Winning Message*/
 
-.win {
+.winMessage {
     position: absolute;
     top: 0;
     left: 0;
@@ -154,12 +155,12 @@ h1 {
     transform: rotateY(180deg) rotateZ(50deg);
 }
 
-.win-text {
+.winMessage-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 21pt;
+    font-size: 25pt;
     color: #282A3A;
 }
 

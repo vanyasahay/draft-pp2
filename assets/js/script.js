@@ -1,11 +1,11 @@
 //Selectors used in building this game
 const selectors = {
-    boardContainer: document.querySelector('.board-container'),
-    board: document.querySelector('.board'),
+    boardContainer: document.querySelector('.game-container'),
+    board: document.querySelector('.deck'),
     moves: document.querySelector('.moves'),
-    timer: document.querySelector('.timer'),
+    timer: document.querySelector('.time'),
     start: document.querySelector('#start'),
-    win: document.querySelector('.win')
+    win: document.querySelector('.winMessage')
 }
 
 const state = {
@@ -45,7 +45,7 @@ const pickRandom = (array, items) => {
 }
 
 //Function to generate game
-const generateGame = () => {
+const prepareGame = () => {
         const dimensions = selectors.board.getAttribute('data-dimension')
 
         if (dimensions % 2 !== 0) {
@@ -148,5 +148,5 @@ const attachEventListeners = () => {
     })
 }
 
-generateGame()
+prepareGame()
 attachEventListeners()
