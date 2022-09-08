@@ -45,8 +45,11 @@ h1 {
 }
 
 .statistics {
+    display: inline-flex;
+    align-items: flex-end;
     color: #FFF;
     font-size: 14pt;
+    font-weight: bold;
 }
 
 .game-container {
