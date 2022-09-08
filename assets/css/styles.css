@@ -45,7 +45,7 @@ h1 {
 }
 
 .statistics {
-    display: inline-flex;
+    display: flex;
     align-items: flex-end;
     color: #FFF;
     font-size: 14pt;
