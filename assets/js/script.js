@@ -1,11 +1,11 @@
 //Selectors used in building this game
 const selectors = {
     boardContainer: document.querySelector('.game-container'),
-    board: document.querySelector('.deck'),
+    board: document.querySelector('.board'),
     moves: document.querySelector('.moves'),
-    timer: document.querySelector('.time'),
-    start: document.querySelector('#start'),
-    win: document.querySelector('.winMessage')
+    timer: document.querySelector('.timer'),
+    start: document.querySelector('button'),
+    win: document.querySelector('.win')
 }
 
 const state = {
@@ -44,18 +44,25 @@ const pickRandom = (array, items) => {
     return randomPicks
 }
 
-//Function to generate game
-const prepareGame = () => {
+const generateGame = () => {
         const dimensions = selectors.board.getAttribute('data-dimension')
 
         if (dimensions % 2 !== 0) {
             throw new Error("The dimension of the board must be an even number.")
         }
 
-        const emojis = ['🍓', '🥭', '🍋', '🍍', '🍊', '🍑', '🍇', '🍉', '🍌', '🍐']
-        const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
-        const items = shuffle([...picks, ...picks])
-        const cards = `
+        //Function to generate game
+        const generateGame = () => {
+                const dimensions = selectors.board.getAttribute('data-dimension')
+
+                if (dimensions % 2 !== 0) {
+                    throw new Error("The dimension of the board must be an even number.")
+                }
+
+                const emojis = ['🍓', '🥭', '🍋', '🍍', '🍊', '🍑', '🍇', '🍉', '🍌', '🍐']
+                const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
+                const items = shuffle([...picks, ...picks])
+                const cards = `
         <div class="board" style="grid-template-columns: repeat(${dimensions}, auto)">
             ${items.map(item => `
                 <div class="card">
@@ -68,7 +75,7 @@ const prepareGame = () => {
     
     const parser = new DOMParser().parseFromString(cards, 'text/html')
 
-    selectors.board.replaceWith(parser.querySelector('.deck'))
+    selectors.board.replaceWith(parser.querySelector('.board'))
 }
 
 //Function to Start Game.
@@ -84,7 +91,6 @@ const startGame = () => {
     }, 1000)
 }
 
-//Function for back flip
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
         card.classList.remove('flipped')
@@ -124,7 +130,7 @@ const flipCard = card => {
             selectors.boardContainer.classList.add('flipped')
             selectors.win.innerHTML = `
                 <span class="win-text">
-                Congratulations Champion! You have won!<br />
+                    You are the CHAMPION where!<br />
                     with <span class="highlight">${state.totalFlips}</span> moves<br />
                     under <span class="highlight">${state.totalTime}</span> seconds
                 </span>
@@ -147,6 +153,6 @@ const attachEventListeners = () => {
         }
     })
 }
-
-prepareGame()
+}
+generateGame()
 attachEventListeners()
