@@ -19,16 +19,16 @@ To make this game existing two functions are added- Total number of flips and To
 
 - __Start__
 
-- Clicking Start button will start the game.
+-Clicking Start button will start the game.
 
 - __Total Time__
 
- - Total time is the time taken to match all existing emojis. This also records total time taken to finish the game. 
+ -Total time is the time taken to match all existing emojis. This also records total time taken to finish the game. 
   
 
 - __Total Flips__
 
- - Total FLips are total number of flips a player made to match the emojis.
+ -Total FLips are total number of flips a player made to match the emojis.
 
 - __Technology Used__
   - **HTML**
