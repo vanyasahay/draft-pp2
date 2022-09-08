@@ -1,5 +1,5 @@
 const selectors = {
-    boardContainer: document.querySelector('.game-container'),
+    boardContainer: document.querySelector('.board-container'),
     board: document.querySelector('.board'),
     moves: document.querySelector('.moves'),
     timer: document.querySelector('.timer'),
@@ -56,7 +56,7 @@ const generateGame = () => {
         const cards = `
         <div class="board" style="grid-template-columns: repeat(${dimensions}, auto)">
             ${items.map(item => `
-                <div class="card"
+                <div class="card">
                     <div class="card-front"></div>
                     <div class="card-back">${item}</div>
                 </div>
@@ -80,7 +80,6 @@ const startGame = () => {
         selectors.timer.innerText = `time: ${state.totalTime} sec`
     }, 1000)
 }
-
 
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
@@ -139,10 +138,10 @@ const attachEventListeners = () => {
 
         if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
             flipCard(eventParent)
-        } else if (eventTarget.nodeName === '#start' && !eventTarget.className.includes('disabled')) {
+        } else if (eventTarget.nodeName === 'BUTTON' && !eventTarget.className.includes('disabled')) {
             startGame()
         }
-})
+    })
 }
 
 generateGame()
